@@ -1,174 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Spartan', sans-serif;
-    font-size: 15px;
-
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    margin: auto;
-    width: 95%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
+  margin: auto;
+  width: 95%;
+  max-width: 1550px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
 }
 
-.down {}
-
+.down {
+}
 
 .description {
-
-    color: hsl(303, 10%, 53%);
-    margin: 2em 1em;
-    width: 40%;
+  color: hsl(303, 10%, 53%);
+  margin: 2em 1em;
+  font-size: 1.3rem;
+  width: 40%;
 }
 
 .description h1 {
-    color: hsl(300, 43%, 22%);
-    margin-bottom: 1em;
+  color: hsl(300, 43%, 22%);
+  font-size: 3rem;
+  margin-bottom: 1em;
 }
 
 .rate {
-    width: 40%;
+  width: 40%;
 }
 
 .rate ul {
-    list-style: none;
+  list-style: none;
 }
 
 .rate_item {
-
-    color: hsl(300, 43%, 22%);
-    font-weight: 700;
-    background: hsl(300, 24%, 96%);
-    padding: 1em;
-    border-radius: 5px;
-    margin-top: 15px;
-    display: flex;
-    align-items: baseline;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  background: hsl(300, 24%, 96%);
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 15px;
+  display: flex;
+  align-items: baseline;
 }
 
 .rate_item img {
-    margin-right: 10px;
-
+  margin-right: 10px;
 }
 
 .rate_item p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .item_1 {
-    margin-right: 6em;
-    margin-left: -6em;
+  margin-right: 6em;
+  margin-left: -6em;
 }
 
 .item_2 {
-    margin-right: 3em;
-    margin-left: -3em;
+  margin-right: 3em;
+  margin-left: -3em;
 }
 
 .testimony {
-    align-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: auto;
-
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
 }
 
 .testimony_item {
-    background-color: hsl(300, 43%, 22%);
-    color: white;
-    padding: 20px 25px;
-    border-radius: 5px;
-    margin: 20px;
-    width: 100%;
-    text-align: initial;
-    font-size: 0.8rem;
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 100%;
+  max-width: 500px;
+  text-align: initial;
+  font-size: 0.8rem;
+}
+.profile_1 {
+  margin-top: -6%;
+}
+.profile_2 {
+  margin-top: -2%;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .profile ul {
-    list-style: none;
+  list-style: none;
 }
 
 .profile_img {
-    border-radius: 50%;
-    width: 35px;
-    margin-right: 1em;
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 1em;
 }
 
 .name {
-    font-weight: 500;
-
+  font-weight: 500;
 }
 
 .function {
-    font-weight: 400;
-    color: hsla(300, 24%, 96%, 0.664);
-
+  font-weight: 400;
+  color: hsla(300, 24%, 96%, 0.664);
 }
 
 @media only screen and (max-width: 950px) {
-    body {
-        font-family: 'Spartan', sans-serif;
-        font-size: 15px;
-        text-align: center;
-    }
+  body {
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .top {
-        flex-direction: column;
-    }
+  .top {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
 
-    .description {
-        width: 100%;
-    }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .description h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
 
-    .rate_item {
-        display: block;
-    }
+  .rate_item {
+    display: block;
+  }
 
-    .testimony {
-        flex-direction: column;
-        width: 100%;
-    }
+  .testimony {
+    flex-direction: column;
+    width: 100%;
+  }
+  .testimony_item {
+    max-width: 100%;
+  }
+  .profile_2,
+  .profile_3 {
+    margin-top: 0;
+  }
 
-    .rate {
-        width: 100%;
+  .rate {
+    width: 100%;
+  }
 
-    }
-
-    .item_2,
-    .item_1 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-
+  .item_2,
+  .item_1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
