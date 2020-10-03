@@ -9,13 +9,27 @@
 body {
   font-family: "Spartan", sans-serif;
   font-size: 15px;
-  display: flex;
-  align-items: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-desktop-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.bottom-desktop-img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.top-mobile-img {
+  display: none;
 }
 
 .container {
-  margin: auto;
   width: 95%;
   max-width: 1550px;
   padding: 50px;
@@ -27,6 +41,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
+
+  width: 100%;
 }
 
 .down {
@@ -131,7 +147,8 @@ body {
 
 .function {
   font-weight: 400;
-  color: hsla(300, 24%, 96%, 0.664);
+  color: #ee68a4;
+  opacity: 0.75;
 }
 
 @media only screen and (max-width: 950px) {
@@ -139,6 +156,16 @@ body {
     font-family: "Spartan", sans-serif;
     font-size: 15px;
     text-align: center;
+    display: block;
+  }
+  .top-mobile-img {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .bottom-desktop-img,
+  .top-desktop-img {
+    display: none;
   }
 
   .container {
